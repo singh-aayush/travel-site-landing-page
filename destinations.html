@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/favicon.png">
+    <title>Destinations - Travel Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Travel Site</div>
+            <button class="menu-toggle">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="signupButton">Sign Up</button></li>
+            </ul>
+            <div id="signupModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <div class="modal-section" id="signupSection">
+                        <h2>Sign Up</h2>
+                        <form action="#" method="POST">
+                            <input type="text" id="signupName" name="name" required placeholder="Enter your name">
+                            <input type="email" id="signupEmail" name="email" required placeholder="Enter your email">
+                            <input type="password" id="signupPassword" name="password" required
+                                placeholder="Create a password">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                        <p>Already have an account? <a href="#" id="switchToSignin">Sign In</a></p>
+                    </div>
+                    <div class="modal-section" id="signinSection" style="display: none;">
+                        <h2>Sign In</h2>
+                        <form action="#" method="POST">
+                            <input type="email" id="signinEmail" name="email" required placeholder="Enter your email">
+                            <input type="password" id="signinPassword" name="password" required
+                                placeholder="Enter your password">
+                            <button type="submit">Sign In</button>
+                        </form>
+                        <p>Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="destination-overview">
+        <h1>Explore Our Top Destinations</h1>
+        <p>We offer a variety of destinations for you to explore. Whether you're looking for a beach getaway or a
+            cultural adventure, we've got you covered.</p>
+    </section>
+
+    <section class="destination-gallery">
+        <h2>Featured Destinations</h2>
+        <div class="destination-list">
+            <div class="destination-card">
+                <img src="/images/paris.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+                <p>Discover the romance and culture of Paris. A perfect destination for art lovers and foodies.</p>
+            </div>
+            <div class="destination-card">
+                <img src="/images/maldives.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>Relax on the white sandy beaches and explore the crystal-clear waters of the Maldives.</p>
+            </div>
+            <div class="destination-card">
+                <img src="/images/bali.jpg" alt="Bali">
+                <h3>Bali, Indonesia</h3>
+                <p>Enjoy the stunning landscapes and serene beaches in Bali, a paradise for nature lovers.</p>
+            </div>
+            <div class="destination-card">
+                <img src="/images/rome.jpg" alt="Rome">
+                <h3>Rome, Italy</h3>
+                <p>Step into history with the ancient ruins and incredible architecture of Rome.</p>
+            </div>
+            <div class="destination-card">
+                <img src="/images/tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo, Japan</h3>
+                <p>Experience the perfect blend of traditional culture and futuristic city life in Tokyo.</p>
+            </div>
+            <div class="destination-card">
+                <img src="/images/new york.jpg" alt="New York">
+                <h3>New York, USA</h3>
+                <p>The city that never sleeps! Explore iconic landmarks, Broadway shows, and world-class dining.</p>
+            </div>
+            <div class="destination-card">
+                <img src="/images/dubai.jpg" alt="Dubai">
+                <h3>Dubai, UAE</h3>
+                <p>Experience luxury, skyscrapers, and desert adventures in the glamorous city of Dubai.</p>
+            </div>
+            <div class="destination-card">
+                <img src="/images/cape town.jpg" alt="Cape Town">
+                <h3>Cape Town, South Africa</h3>
+                <p>A city of stunning landscapes, mountains, beaches, and rich cultural heritage.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Travel Site. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

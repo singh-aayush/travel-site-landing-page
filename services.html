@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/image/favicon.png">
-
-    <title>Our Services - Food Site</title>
+    <title>Our Services - Travel Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">Food Site</div>
+            <div class="logo">Travel Site</div>
             <button class="menu-toggle">&#9776;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><button id="signupButton">Sign Up</button></li>
@@ -25,7 +25,6 @@
             <div id="signupModal" class="modal">
                 <div class="modal-content">
                     <span id="closeModal" class="close">&times;</span>
-
                     <div class="modal-section" id="signupSection">
                         <h2>Sign Up</h2>
                         <form action="#" method="POST">
@@ -37,7 +36,6 @@
                         </form>
                         <p>Already have an account? <a href="#" id="switchToSignin">Sign In</a></p>
                     </div>
-
                     <div class="modal-section" id="signinSection" style="display: none;">
                         <h2>Sign In</h2>
                         <form action="#" method="POST">
@@ -54,48 +52,40 @@
     </header>
 
     <section class="services">
-        <h1>Our Services</h1>
-        <p>We offer a variety of services designed to provide you with the best dining experience. Whether you’re
-            looking for a quick meal or a customized catering service, we’ve got you covered!</p>
+        <h1>Our Travel Services</h1>
+        <p>We offer a range of travel services to make your journey comfortable and hassle-free. Whether you're looking
+            for adventure or a relaxing getaway, we have something for everyone!</p>
 
         <div class="service-list">
             <div class="service-item">
-                <div class="serviceImages">
-                    <img src="/image/fast deliver.jpg" alt="">
-                </div>
-                <div class="serviceDetails">
-                    <h2>Fast Delivery</h2>
-                    <p>Enjoy fast and reliable delivery of your favorite meals, right to your doorstep.</p>
+                <div class="allServices">
+                    <h2>Travel Booking</h2>
+                    <img src="/images/travle booking.jpg" alt="Travel Booking">
+                    <p>Seamless flight and hotel bookings with the best deals available.</p>
                 </div>
 
             </div>
             <div class="service-item">
-                <div class="serviceImages">
-                    <img src="/image/gov catering.jpg" alt="">
-                </div>
-                <div class="serviceDetails">
-                    <h2>Gourmet Catering</h2>
-                    <p>Our expert chefs provide gourmet catering for your special events with personalized menus.</p>
+                <div class="allServices">
+                    <h2>Guided Tours</h2>
+                    <img src="/images/guide.jpg" alt=" Guided Tours">
+                    <p>Explore top destinations with expert guides and curated experiences.</p>
                 </div>
 
             </div>
             <div class="service-item">
-                <div class="serviceImages">
-                    <img src="/image/meal plans.jpg" class="meal" alt="">
-                </div>
-                <div class="serviceDetails">
-                    <h2>Meal Plans</h2>
-                    <p>Choose from our curated meal plans, designed to meet your dietary preferences and needs.</p>
+                <div class="allServices">
+                    <h2>Car Rentals</h2>
+                    <img src="/images/car rent.jpg" alt=" Car Rentals">
+                    <p>Convenient and affordable car rental services for your travels.</p>
                 </div>
 
             </div>
             <div class="service-item">
-                <div class="serviceImages">
-                    <img src="/image/online order.jpg" alt="">
-                </div>
-                <div class="serviceDetails">
-                    <h2>Online Ordering</h2>
-                    <p>Order your favorite dishes easily through our user-friendly online platform, anytime.</p>
+                <div class="allServices">
+                    <h2>Travel Insurance</h2>
+                    <img src="/images/travel insurance.jpg" alt="Travel Insurance">
+                    <p>Comprehensive travel insurance to keep you covered on your trips.</p>
                 </div>
 
             </div>
@@ -103,10 +93,9 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Food Delight. All Rights Reserved.</p>
+        <p>&copy; 2025 Travel Site. All Rights Reserved.</p>
     </footer>
-    <script src="/script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

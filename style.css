@@ -1,31 +1,48 @@
+/* General body and layout */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
-  text-align: center;
+  color: #333;
 }
 
+/* Header and Navigation */
 header {
   background-color: #ff6600;
-  padding: 15px 0;
-}
-
-.menu-toggle {
-  display: none;
+  padding: 20px 0;
 }
 
 nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4rem;
+  padding: 0 2rem;
+}
+
+#signupButton {
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#switchToSignup {
+  color: #ff6600;
+}
+
+#switchToSignin {
+  color: #ff6600;
 }
 
 .logo {
   font-size: 2rem;
+  color: white;
   font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 nav ul {
@@ -44,72 +61,147 @@ nav a {
   font-weight: bold;
 }
 
-.hero {
-  background: url("/image/background image.jpg") no-repeat center center/cover;
-  color: black;
-  padding: 100px 20px;
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#orderButton {
-  border-radius: 8px;
-  font-weight: bold;
-}
-
 button {
   background-color: #ff6600;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 button:hover {
   background-color: #e65c00;
 }
 
-.features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+/* Hero Section */
+.hero {
+  background: url("/images/background.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
 }
 
-.featuresHeading h2 {
-  font-size: 2rem;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: white;
+  color: #ff6600;
+  border: none;
+}
+
+.hero button:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  color: #333;
 }
 
 .allFeatureSection {
   display: flex;
   justify-content: space-around;
-  margin: 1rem 0;
+  margin-top: 30px;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
 }
 
 .feature img {
-  width: 350px;
-  height: auto;
-  border-radius: 9px;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
 }
 
-.feature .lastImage {
-  height: 232px;
+.feature h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
+.feature p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Destinations Section */
+.destinations {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.destinations h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.destinationGallery {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.destination {
+  width: 30%;
+  text-align: center;
+}
+
+.destination img {
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+}
+
+.destination h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Testimonials Section */
 .testimonials {
-  background: #f1f1f1;
-  padding: 20px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.customerComments {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .testimonial {
-  width: 300px;
-  margin: 20px;
-  padding: 10px;
-  background: white;
+  width: 250px;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -117,408 +209,157 @@ button:hover {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-.customerComments {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+.userComment p {
+  font-size: 1rem;
+  color: #666;
 }
 
-.userCommet p {
-  padding: 0 5px;
+.userComment h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
+/* Call to Action Section */
 .cta {
-  background: #ff6600;
+  background-color: #ff6600;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px 20px;
 }
 
-#ctaButton {
-  background-color: white;
-  color: #ff6600;
-  border-radius: 8px;
-  margin-top: 1rem;
-}
-
-footer {
-  background: #333;
-  color: white;
-  padding: 10px 0;
-}
-
-.company-overview {
-  background-color: #f8f8f8;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.company-overview h1 {
+.cta h2 {
   font-size: 2.5rem;
-  color: #333;
   margin-bottom: 20px;
 }
 
-.company-overview p {
+.cta p {
   font-size: 1.2rem;
-  color: #666;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.cta button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background-color: white;
+  color: #ff6600;
+  border: none;
+  border-radius: 8px;
+}
+
+.cta button:hover {
+  /* background-color: #e65c00; */
+  color: black;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.company-overview,
+.company-history,
+.our-team,
+.awards-recognition,
+.mission-values {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
 }
 
 .mission-values {
-  background-color: #f8f8f8;
-  padding: 50px 20px;
-  margin-top: 40px;
-}
-
-.mission-values h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
   text-align: center;
+  padding: 50px 20px;
+  background-color: #ff6600;
 }
 
+.company-overview h1,
+.company-history h2,
+.our-team h2,
+.awards-recognition h2,
+.mission-values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.company-overview p,
+.company-history p,
+.our-team p,
+.awards-recognition p,
 .mission-values p {
   font-size: 1.2rem;
   color: #666;
-  line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.mission-values ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: left;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-.mission-values ul li {
-  font-size: 1.2rem;
-  color: #666;
-  padding: 8px 0;
-}
-
-.mission-values ul li strong {
-  color: #ff6600;
+/* Images */
+.company-history img,
+.our-team img,
+.awards-recognition img {
+  width: 60%;
+  max-width: 30%;
+  height: 230px;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .company-history {
-  background-color: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.company-history img {
-  width: 300px;
-  margin: 1rem 0;
-  height: 200px;
-  border-radius: 10px;
-}
-
-.company-history h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.company-history p {
-  font-size: 1.2rem;
-  color: #666;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-bottom: 30px;
-}
-
-.our-team {
-  background-color: #f8f8f8;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.our-team h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.our-team .team-member {
-  display: inline-block;
-  width: 250px;
-  margin: 20px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* .our-team .team-member img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 15px;
-} */
-
-.our-team img {
-  width: 300px;
-  margin: 1rem 0;
-  height: 200px;
-  border-radius: 10px;
-}
-
-.our-team p {
-  padding: 0 7rem;
-}
-
-.awards-recognition img {
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
-}
-
-li {
-  list-style: none;
-}
-
-.our-team .team-member h3 {
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.our-team .team-member p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.our-team .team-member .role {
-  font-weight: bold;
-  color: #ff6600;
+  background-color: #eee;
+  padding: 1rem 0 2rem;
 }
 
 .awards-recognition {
-  background-color: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
+  background-color: #eee;
+  padding: 1rem 0 2rem;
 }
 
-.awards-recognition h2 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.awards-recognition .award {
-  display: inline-block;
-  width: 250px;
-  margin: 20px;
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.awards-recognition .award img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.awards-recognition .award h3 {
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.awards-recognition .award p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.awards-recognition .award .year {
-  font-weight: bold;
-  color: #ff6600;
-}
-
-footer {
-  background: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.services {
-  background-color: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.services h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.services p {
-  font-size: 1.2rem;
-  color: #666;
-  line-height: 1.6;
+/* Awards Section */
+.awards-recognition ul {
+  list-style: none;
+  padding: 0;
   max-width: 800px;
   margin: 0 auto;
-  padding-bottom: 30px;
 }
 
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-
-.service-item {
-  background-color: #f8f8f8;
-  padding: 20px;
-  margin: 20px;
-  width: 280px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.serviceImages {
-  width: 100%;
-  height: auto;
-}
-
-.serviceImages .meal {
-  height: 190px;
-}
-
-.serviceImages img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.service-item h2 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.service-item p {
-  font-size: 1.1rem;
-  color: #666;
-  line-height: 1.6;
-}
-
-footer {
-  background: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.contact {
-  background-color: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.contact h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.contact p {
+.awards-recognition li {
   font-size: 1.2rem;
-  color: #666;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-bottom: 30px;
-}
-
-.contact-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 40px;
-}
-
-.contact-form form {
-  background-color: #f8f8f8;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  width: 100%;
-}
-
-.contact-form .form-group {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.contact-form label {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 5px;
-  display: block;
-  display: flex;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 95%;
+  background-color: white;
+  margin: 10px 0;
   padding: 10px;
-  font-size: 1rem;
-  color: #333;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #ff6600;
-  outline: none;
-}
-
-.contact-form button {
-  background-color: #ff6600;
-  color: white;
-  padding: 12px 30px;
-  border: none;
   border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form button:hover {
-  background-color: #e65c00;
+/* Mission & Values */
+.mission-values ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-footer {
-  background: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  margin-top: 40px;
+.mission-values li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
@@ -527,33 +368,25 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 20px;
+  background-color: white;
+  margin: 15% auto;
+  padding: 30px;
   border-radius: 8px;
   width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .close {
-  color: #fff;
+  color: #aaa;
   font-size: 28px;
   font-weight: bold;
   position: absolute;
-  top: 33px;
-  right: 40px;
-}
-
-#signupButton {
-  background: white;
-  color: #ff6600;
-  border-radius: 8px;
-  font-weight: bold;
+  top: 10px;
+  right: 15px;
 }
 
 .close:hover,
@@ -589,247 +422,520 @@ footer {
   background-color: #e65c00;
 }
 
-.modal-section a {
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #666;
+  padding: 0 5rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #333;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff6600;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e65c00;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Destinations Section */
+.destination-overview {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.destination-overview h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.destination-overview p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Destination Gallery */
+.destination-gallery {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.destination-gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.destination-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.destination-card {
+  width: 30%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+}
+
+.destination-card h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.destination-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Services Page */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.services h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.services p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Service List */
+.service-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Service Items */
+.service-item {
+  width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item img {
+  width: 420px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.service-item {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   color: #ff6600;
-  text-decoration: none;
 }
 
-.modal-section a:hover {
-  text-decoration: underline;
+.service-item p {
+  font-size: 1rem;
+  color: #666;
 }
 
-@media (min-width: 760px) and (max-width: 1024px) {
-  nav {
-    padding: 0 2rem;
-  }
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
 
-  .menu-toggle {
-    display: none;
-  }
-
-  .hero {
-    padding: 60px 20px;
-  }
-
-  .features .allFeatureSection {
+/* Responsive Styles */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .destination-list {
     flex-direction: column;
     align-items: center;
-  }
-
-  .features .feature {
-    width: 80%;
-    margin: 1rem 0;
-  }
-
-  .testimonials .testimonial {
-    width: 90%;
-  }
-
-  .service-list {
-    flex-direction: column;
-  }
-
-  .service-item {
-    width: 90%;
-  }
-
-  .contact-form form {
-    width: 90%;
-  }
-
-  .contact-form button {
-    width: 100%;
-  }
-}
-
-@media (min-width: 440px) and (max-width: 760px) {
-  nav {
-    flex-direction: column;
-    padding: 0 1rem;
   }
 
   nav ul li {
-    font-size: 14px;
+    font-size: 12px;
   }
 
-  .menu-toggle {
-    display: none;
+  #signupButton {
+    font-size: 12px;
+  }
+
+  .service-item img {
+    width: 320px;
+    height: 180px;
   }
 
   .logo {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
-  .hero {
-    padding: 50px 10px;
-    height: 15rem;
-  }
-
-  .features .allFeatureSection {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service-item {
-    width: 90%;
-  }
-
-  .our-team .team-member {
-    width: 90%;
-  }
-
-  .modal-content {
-    width: 90%;
-  }
-
-  .contact-form form {
-    width: 100%;
+  .destination-card {
+    width: 80%;
+    margin-bottom: 20px;
   }
 }
 
-@media (min-width: 200px) and (max-width: 440px) {
-  body {
-    font-size: 14px;
-  }
-
-  .logo {
-    margin: 0;
-  }
-
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 1rem;
-    position: relative;
-  }
-
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.1rem;
-    cursor: pointer;
-    color: white;
+/* Responsive Styles */
+@media (min-width: 440px) and (max-width: 768px) {
+  .allFeatureSection,
+  .destinationGallery {
+    flex-direction: column;
+    align-items: center;
   }
 
   nav ul {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 45px;
-    left: 0;
     width: 100%;
     background: #ff6600;
-    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
   }
 
-  nav ul.active {
+  .menu-toggle {
+    display: block;
+  }
+
+  .service-list {
     display: flex;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .hero {
-    padding: 50px 10px;
-    height: auto;
-  }
-
-  .feature .lastImage {
-    height: 140px;
-  }
-
-  .allFeatureSection,
-  .customerComments {
     flex-direction: column;
-    align-items: center;
+    width: 85%;
   }
 
-  .feature img,
+  .feature,
+  .destination {
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  .service-list {
+    width: 100%;
+  }
+
   .testimonial {
     width: 90%;
+    margin: 15px 0;
   }
 
-  .featuresHeading h2 {
-    font-size: 1.5rem;
-  }
-
-  .feature h2 {
+  .cta button {
+    width: 80%;
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 220px) and (max-width: 440px) {
+  /* Adjusting heading sizes */
+  h1 {
+    font-size: 1.5rem; /* Main heading */
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem; /* All other headings */
+  }
+
+  /* Adjusting paragraph size */
+  p {
+    font-size: 12px;
+  }
+
+  /* Adjusting navigation */
+  .menu-toggle {
+    display: block;
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  nav {
+    padding: 0 8px;
+  }
+
+  .features h2 {
+    font-size: 1rem;
+  }
+
+  .features {
+    padding: 40px 10px;
+  }
+
+  .feature img {
+    height: 180px;
   }
 
   .feature p {
     font-size: 12px;
   }
 
-  .customerSectionHeading h2 {
-    font-size: 1rem;
+  .destinations h2 {
+    font-size: 1.5rem;
   }
 
-  .userComment p {
-    font-size: 10px;
+  .destination img {
+    height: 180px;
   }
 
-  .userComment h4 {
-    font-size: 12px;
+  .testimonials h2 {
+    font-size: 1.5rem;
   }
 
   .cta h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .cta p {
     font-size: 12px;
   }
 
-  .userProfile img {
-    width: 60px;
-    height: 60px;
+  .company-overview h1,
+  .company-history h2,
+  .our-team h2,
+  .awards-recognition h2,
+  .mission-values h2 {
+    font-size: 1.5rem;
   }
 
-  .company-overview p {
-    font-size: 13px;
-  }
-
-  .company-history img {
-    width: 100%;
-    height: 140px;
-  }
-
-  .company-history p {
-    font-size: 13px;
-  }
-
-  .awards-recognition img {
-    width: 100%;
-    height: 140px;
-  }
-
-  .awards-recognition ul {
-    padding: 0;
-  }
-
-  .awards-recognition ul li {
+  .company-overview p,
+  .company-history p,
+  .our-team p,
+  .awards-recognition p,
+  .mission-values p {
     font-size: 12px;
   }
 
-  .our-team img {
+  .company-history img,
+  .our-team img,
+  .awards-recognition img {
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .awards-recognition li {
+    font-size: 12px;
+  }
+
+  .mission-values li {
+    font-size: 14px;
+  }
+
+  .destination-overview h1 {
+    font-size: 1.5rem;
+  }
+
+  .destination-overview p {
+    font-size: 13px;
+  }
+
+  .destination-gallery {
+    padding: 40px 10px;
+  }
+
+  .destination-gallery h2 {
+    font-size: 1.5rem;
+  }
+
+  .destination-card img {
+    height: 180px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
     width: 100%;
-    height: 140px;
+    background: #ff6600;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
   }
 
-  .mission-values p {
-    font-size: 13px;
+  nav ul li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
   }
 
-  .mission-values ul li {
-    font-size: 13px;
+  nav ul.active {
+    display: flex;
   }
 
-  .our-team p {
-    padding: 0 1rem;
+  /* Hero section adjustments */
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+
+  .hero button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* Adjusting section layouts */
+  .allFeatureSection,
+  .destinationGallery,
+  .customerComments,
+  .destination-list,
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .allFeatureSection {
+    width: 100%;
+  }
+
+  .destinationGallery {
+    width: 100%;
+  }
+
+  .customerComments {
+    width: 100%;
+  }
+
+  .modal-section form {
+    width: 90%;
+  }
+
+  .feature,
+  .destination,
+  .testimonial,
+  .destination-card,
+  .service-item {
+    width: 90%;
+    margin: 5px 5px;
+  }
+
+  .destination-list {
+    gap: 10px;
   }
 
   .services h1 {
@@ -837,27 +943,28 @@ footer {
   }
 
   .services p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  .service-list {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+  .allServices h2 {
+    font-size: 1rem;
   }
 
-  .service-item {
-    width: 90%;
-    margin: 0;
-    padding: 8px;
+  .allServices {
+    width: 100%;
   }
 
-  .serviceDetails h2 {
-    font-size: 1.2rem;
+  .allServices img {
+    width: 100%;
+    height: 180px;
   }
 
-  .serviceDetails p {
-    font-size: 10px;
+  .destination-card h3 {
+    font-size: 1rem;
+  }
+
+  .destination-card p {
+    font-size: 12px;
   }
 
   .contact h1 {
@@ -865,31 +972,45 @@ footer {
   }
 
   .contact p {
-    font-size: 12px;
+    font-size: 13px;
+    padding: 0px;
+  }
+
+  .contact-form {
+    padding: 15px 10px;
   }
 
   .contact-form form {
-    width: 90%;
+    width: 100%;
+  }
+
+  .form-group {
+    width: 100%;
   }
 
   .form-group label {
     font-size: 14px;
+    margin: 0;
   }
 
   .form-group input {
     font-size: 12px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 90%;
+    width: 85%;
   }
 
   .form-group textarea {
     font-size: 12px;
+    width: 85%;
   }
 
-  footer p {
-    font-size: 10px;
+  /* CTA button adjustment */
+  .cta button {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    width: 90%;
+    padding: 20px;
   }
 }

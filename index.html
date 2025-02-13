@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/image/favicon.png">
-    <title>Food Site - Home</title>
+    <title>Travel Site - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">Food Site</div>
+            <div class="logo">Travel Site</div>
             <button class="menu-toggle">&#9776;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><button id="signupButton">Sign Up</button></li>
@@ -24,7 +25,6 @@
             <div id="signupModal" class="modal">
                 <div class="modal-content">
                     <span id="closeModal" class="close">&times;</span>
-
                     <div class="modal-section" id="signupSection">
                         <h2>Sign Up</h2>
                         <form action="#" method="POST">
@@ -36,7 +36,6 @@
                         </form>
                         <p>Already have an account? <a href="#" id="switchToSignin">Sign In</a></p>
                     </div>
-
                     <div class="modal-section" id="signinSection" style="display: none;">
                         <h2>Sign In</h2>
                         <form action="#" method="POST">
@@ -52,86 +51,83 @@
         </nav>
     </header>
 
-
-
     <section class="hero">
-        <h1>Welcome to Food Site</h1>
-        <p>Delicious food delivered to your doorstep!</p>
-        <button id="orderButton">Order Now</button>
+        <h1>Explore the World with Travel Site</h1>
+        <p>Your adventure starts here. Discover amazing destinations today!</p>
+        <button id="exploreButton">Start Exploring</button>
     </section>
 
     <section class="features">
-        <div class="featuresHeading">
-            <h2>Why Choose Us?</h2>
-
-        </div>
+        <h2>Why Travel With Us?</h2>
         <div class="allFeatureSection">
-
-
             <div class="feature">
-                <img src="/image/fresh food.jpg" alt="Fresh Ingredients">
-                <h2>Fresh Ingredients</h2>
-                <p>We use only the freshest ingredients to prepare your meals.</p>
+                <img src="/images/travel deal.jpg" alt="Best Deals">
+                <h2>Best Travel Deals</h2>
+                <p>We offer exclusive deals and discounts on top destinations.</p>
             </div>
             <div class="feature">
-                <img src="/image/fast delivery.jpg" alt="Fast Delivery">
-                <h2>Fast Delivery</h2>
-                <p>Get your food delivered quickly and hot, straight to your doorstep.</p>
+                <img src="/images/guide.jpg" alt="Guided Tours">
+                <h2>Guided Tours</h2>
+                <p>Explore the world with our expert guides and curated experiences.</p>
             </div>
             <div class="feature">
-                <img src="/image/variety of choice.jpg" class="lastImage" alt="Variety of Choices">
-                <h2>Variety of Choices</h2>
-                <p>Explore our extensive menu with dishes for every taste.</p>
+                <img src="/images/booking.jpg" alt="Easy Booking">
+                <h2>Easy Booking</h2>
+                <p>Book your trip in just a few clicks with our seamless process.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destinationGallery">
+            <div class="destination">
+                <img src="/images/paris.jpg" alt="Paris">
+                <h3>Paris, France</h3>
+            </div>
+            <div class="destination">
+                <img src="/images/maldives.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+            </div>
+            <div class="destination">
+                <img src="/images/bali.jpg" alt="Bali">
+                <h3>Bali, Indonesia</h3>
             </div>
         </div>
     </section>
 
     <section class="testimonials">
-        <div class="customerSectionHeading">
-            <h2>What Our Customers Say</h2>
-        </div>
+        <h2>What Our Travelers Say</h2>
         <div class="customerComments">
             <div class="testimonial">
                 <div class="userProfile">
-                    <img src="/image/profile.webp" alt="">
+                    <img src="/images/profile.webp" alt="">
                 </div>
                 <div class="userComment">
-                    <p>"Amazing food and quick delivery! Highly recommend."</p>
-                    <h4>- Sarah J.</h4>
+                    <p>"An unforgettable experience! Everything was perfectly organized."</p>
+                    <h4>- Aayush</h4>
                 </div>
-
             </div>
             <div class="testimonial">
                 <div class="userProfile">
-                    <img src="/image/profile.webp" alt="">
+                    <img src="/images/profile.webp" alt="">
                 </div>
                 <div class="userComment">
-                    <p>"The best online food delivery service I've ever used!"</p>
-                    <h4>- Mark T.</h4>
+                    <p>"Best travel agency! Got amazing deals and had the best time!"</p>
+                    <h4>- Aayush</h4>
                 </div>
-
-            </div>
-            <div class="testimonial">
-                <div class="userProfile">
-                    <img src="/image/profile.webp" alt="">
-                </div>
-                <div class="userComment">
-                    <p>"Fantastic variety and great taste! Will order again for sure."</p>
-                    <h4>- Emily R.</h4>
-                </div>
-
             </div>
         </div>
     </section>
 
     <section class="cta">
-        <h2>Order Your Favorite Meal Now!</h2>
-        <p>Experience the best food delivery service in town.</p>
-        <button id="ctaButton">Order Now</button>
+        <h2>Plan Your Dream Trip Now!</h2>
+        <p>Discover the world's most beautiful places with Travel Site.</p>
+        <button id="ctaButton">Get Started</button>
     </section>
 
     <footer>
-        <p>&copy; 2025 Food Site. All Rights Reserved.</p>
+        <p>&copy; 2025 Travel Site. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
