@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/favicon.png">
+
+    <title>About Us - Food Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Food Site</div>
+            <button class="menu-toggle">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="signupButton">Sign Up</button></li>
+            </ul>
+            <div id="signupModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+
+                    <div class="modal-section" id="signupSection">
+                        <h2>Sign Up</h2>
+                        <form action="#" method="POST">
+                            <input type="text" id="signupName" name="name" required placeholder="Enter your name">
+                            <input type="email" id="signupEmail" name="email" required placeholder="Enter your email">
+                            <input type="password" id="signupPassword" name="password" required
+                                placeholder="Create a password">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                        <p>Already have an account? <a href="#" id="switchToSignin">Sign In</a></p>
+                    </div>
+
+                    <div class="modal-section" id="signinSection" style="display: none;">
+                        <h2>Sign In</h2>
+                        <form action="#" method="POST">
+                            <input type="email" id="signinEmail" name="email" required placeholder="Enter your email">
+                            <input type="password" id="signinPassword" name="password" required
+                                placeholder="Enter your password">
+                            <button type="submit">Sign In</button>
+                        </form>
+                        <p>Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="company-overview">
+        <h1>About Food Site</h1>
+        <p>Food Site is dedicated to bringing you the freshest, most delicious meals right to your doorstep. We are a
+            passionate team of food enthusiasts who believe in making every meal a delightful experience.</p>
+        <p>Since our inception, we have focused on providing top-quality meals prepared by expert chefs using only the
+            best ingredients. Whether you're craving a quick bite or a gourmet feast, we have something for everyone.
+        </p>
+    </section>
+
+    <section class="company-history">
+        <h2>Our History</h2>
+        <img src="/image/growth.jpg" alt="">
+
+        <p>Founded in 2010, Food Delight started as a small, family-run kitchen with the aim of providing quality meals
+            to the local community. Over the years, we expanded our offerings, built partnerships with local farms, and
+            invested in technology to ensure that our customers receive their meals quickly and conveniently.</p>
+        <p>Today, we are a recognized name in the food delivery industry, with hundreds of satisfied customers across
+            the country.</p>
+    </section>
+
+    <section class="our-team">
+        <h2>Our Team</h2>
+        <img src="/image/team.jpg" alt="">
+
+        <p>Our team consists of experienced chefs, delivery experts, and customer service professionals who share a
+            passion for food and hospitality. Each member brings unique skills and expertise to the table, and together,
+            we work hard to deliver the best experience for our customers.</p>
+    </section>
+
+    <section class="awards-recognition">
+        <h2>Awards & Recognition</h2>
+        <img src="/image/reward.jpg" alt="">
+
+        <p>Food Delight has been recognized for its excellence in the food industry:</p>
+        <ul>
+            <li> <strong>Best Food Delivery Service - Foodie Awards 2023</strong></li>
+            <li> <strong>Customer Choice Award - Fast Food Excellence 2022</strong> </li>
+            <li> <strong>Top 10 Food Delivery Startups - Gourmet Magazine 2021</strong></li>
+        </ul>
+    </section>
+
+    <section class="mission-values">
+        <h2>Our Mission & Values</h2>
+        <p><strong>Our Mission:</strong> To deliver high-quality, delicious, and nutritious food to our customers with
+            speed and efficiency.</p>
+        <p><strong>Our Values:</strong>Our values are quality, customer satisfaction, innovation, sustainability,
+            integrity, teamwork, and dedication to
+            excellence.</p>
+        <ul>
+            <li><strong>Quality:</strong> We use only the freshest ingredients.</li>
+            <li><strong>Customer Satisfaction:</strong> Your happiness is our top priority.</li>
+            <li><strong>Innovation:</strong> We constantly evolve to bring you the best culinary experiences.</li>
+            <li><strong>Sustainability:</strong> We support eco-friendly practices and responsible sourcing.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Food Delight. All Rights Reserved.</p>
+    </footer>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

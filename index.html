@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/favicon.png">
+    <title>Food Site - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Food Site</div>
+            <button class="menu-toggle">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="signupButton">Sign Up</button></li>
+            </ul>
+            <div id="signupModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+
+                    <div class="modal-section" id="signupSection">
+                        <h2>Sign Up</h2>
+                        <form action="#" method="POST">
+                            <input type="text" id="signupName" name="name" required placeholder="Enter your name">
+                            <input type="email" id="signupEmail" name="email" required placeholder="Enter your email">
+                            <input type="password" id="signupPassword" name="password" required
+                                placeholder="Create a password">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                        <p>Already have an account? <a href="#" id="switchToSignin">Sign In</a></p>
+                    </div>
+
+                    <div class="modal-section" id="signinSection" style="display: none;">
+                        <h2>Sign In</h2>
+                        <form action="#" method="POST">
+                            <input type="email" id="signinEmail" name="email" required placeholder="Enter your email">
+                            <input type="password" id="signinPassword" name="password" required
+                                placeholder="Enter your password">
+                            <button type="submit">Sign In</button>
+                        </form>
+                        <p>Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="hero">
+        <h1>Welcome to Food Site</h1>
+        <p>Delicious food delivered to your doorstep!</p>
+        <button id="orderButton">Order Now</button>
+    </section>
+
+    <section class="features">
+        <div class="featuresHeading">
+            <h2>Why Choose Us?</h2>
+
+        </div>
+        <div class="allFeatureSection">
+
+
+            <div class="feature">
+                <img src="/image/fresh food.jpg" alt="Fresh Ingredients">
+                <h2>Fresh Ingredients</h2>
+                <p>We use only the freshest ingredients to prepare your meals.</p>
+            </div>
+            <div class="feature">
+                <img src="/image/fast delivery.jpg" alt="Fast Delivery">
+                <h2>Fast Delivery</h2>
+                <p>Get your food delivered quickly and hot, straight to your doorstep.</p>
+            </div>
+            <div class="feature">
+                <img src="/image/variety of choice.jpg" class="lastImage" alt="Variety of Choices">
+                <h2>Variety of Choices</h2>
+                <p>Explore our extensive menu with dishes for every taste.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="customerSectionHeading">
+            <h2>What Our Customers Say</h2>
+        </div>
+        <div class="customerComments">
+            <div class="testimonial">
+                <div class="userProfile">
+                    <img src="/image/profile.webp" alt="">
+                </div>
+                <div class="userComment">
+                    <p>"Amazing food and quick delivery! Highly recommend."</p>
+                    <h4>- Sarah J.</h4>
+                </div>
+
+            </div>
+            <div class="testimonial">
+                <div class="userProfile">
+                    <img src="/image/profile.webp" alt="">
+                </div>
+                <div class="userComment">
+                    <p>"The best online food delivery service I've ever used!"</p>
+                    <h4>- Mark T.</h4>
+                </div>
+
+            </div>
+            <div class="testimonial">
+                <div class="userProfile">
+                    <img src="/image/profile.webp" alt="">
+                </div>
+                <div class="userComment">
+                    <p>"Fantastic variety and great taste! Will order again for sure."</p>
+                    <h4>- Emily R.</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Order Your Favorite Meal Now!</h2>
+        <p>Experience the best food delivery service in town.</p>
+        <button id="ctaButton">Order Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Food Site. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/favicon.png">
+
+    <title>Our Services - Food Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Food Site</div>
+            <button class="menu-toggle">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="signupButton">Sign Up</button></li>
+            </ul>
+            <div id="signupModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+
+                    <div class="modal-section" id="signupSection">
+                        <h2>Sign Up</h2>
+                        <form action="#" method="POST">
+                            <input type="text" id="signupName" name="name" required placeholder="Enter your name">
+                            <input type="email" id="signupEmail" name="email" required placeholder="Enter your email">
+                            <input type="password" id="signupPassword" name="password" required
+                                placeholder="Create a password">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                        <p>Already have an account? <a href="#" id="switchToSignin">Sign In</a></p>
+                    </div>
+
+                    <div class="modal-section" id="signinSection" style="display: none;">
+                        <h2>Sign In</h2>
+                        <form action="#" method="POST">
+                            <input type="email" id="signinEmail" name="email" required placeholder="Enter your email">
+                            <input type="password" id="signinPassword" name="password" required
+                                placeholder="Enter your password">
+                            <button type="submit">Sign In</button>
+                        </form>
+                        <p>Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="services">
+        <h1>Our Services</h1>
+        <p>We offer a variety of services designed to provide you with the best dining experience. Whether you’re
+            looking for a quick meal or a customized catering service, we’ve got you covered!</p>
+
+        <div class="service-list">
+            <div class="service-item">
+                <div class="serviceImages">
+                    <img src="/image/fast deliver.jpg" alt="">
+                </div>
+                <div class="serviceDetails">
+                    <h2>Fast Delivery</h2>
+                    <p>Enjoy fast and reliable delivery of your favorite meals, right to your doorstep.</p>
+                </div>
+
+            </div>
+            <div class="service-item">
+                <div class="serviceImages">
+                    <img src="/image/gov catering.jpg" alt="">
+                </div>
+                <div class="serviceDetails">
+                    <h2>Gourmet Catering</h2>
+                    <p>Our expert chefs provide gourmet catering for your special events with personalized menus.</p>
+                </div>
+
+            </div>
+            <div class="service-item">
+                <div class="serviceImages">
+                    <img src="/image/meal plans.jpg" class="meal" alt="">
+                </div>
+                <div class="serviceDetails">
+                    <h2>Meal Plans</h2>
+                    <p>Choose from our curated meal plans, designed to meet your dietary preferences and needs.</p>
+                </div>
+
+            </div>
+            <div class="service-item">
+                <div class="serviceImages">
+                    <img src="/image/online order.jpg" alt="">
+                </div>
+                <div class="serviceDetails">
+                    <h2>Online Ordering</h2>
+                    <p>Order your favorite dishes easily through our user-friendly online platform, anytime.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Food Delight. All Rights Reserved.</p>
+    </footer>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
